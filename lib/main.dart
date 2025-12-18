@@ -31,6 +31,7 @@ class HomePage extends StatelessWidget {
 
   static const String githubUrl = 'https://github.com/DeadShotZ47';
   static const String facebookUrl = 'https://www.facebook.com/sinsamut.khunphimool.3';
+  static const String igUrl = 'https://www.instagram.com/poundlnwza007?igsh=NHppa3BzZHR1b3hx';
   static const String steamUrl = 'https://steamcommunity.com/profiles/76561198970543087/';
 
   Future<void> _openUrl(String url) async {
@@ -171,6 +172,12 @@ class HomePage extends StatelessWidget {
                                 assetPath: 'asset/icon/Facebook_Logo_(2019).png',
                                 tooltip: 'Facebook',
                                 onTap: () => _openUrl(facebookUrl),
+                              ),
+                              const SizedBox(width: 14),
+                              _LogoButton(
+                                assetPath: 'asset/icon/Instagram_icon.png',
+                                tooltip: 'Instagram',
+                                onTap: () => _openUrl(igUrl),
                               ),
                               const SizedBox(width: 14),
                               _LogoButton(
